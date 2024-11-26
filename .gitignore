@@ -1,0 +1,28 @@
+# Byte-compiled / optimized files
+__pycache__/
+*.py[cod]
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
+# Flask instance folder
+instance/
+
+# Virtual environment
+.env
+.venv
+env/
+venv/
+
+# VSCode settings
+.vscode/
+
+# SQLite database files
+*.db
+*.sqlite
+*.sqlite3
+
+# Environment variables
+.env
