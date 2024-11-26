@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sample Frontend</title>
+    <title>Research Papers</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <h1>Research Paper Listings</h1>
     <button id="loadPapers">Retrieve Papers</button>
-    <table id="papersTable" border="1">
+    <table id="papersTable">
         <thead>
             <tr>
                 <th>Id</th>
@@ -20,10 +20,27 @@
             </tr>
         </thead>
         <tbody>
-            <!-- Papers will be loaded here -->
+            <!-- Handlebars will render the paper rows here -->
         </tbody>
     </table>
 
+    <!-- Handlebars Template for papers -->
+    <script id="paper-template" type="text/x-handlebars-template">
+        {{#each papers}}
+        <tr>
+            <td>{{this.Id}}</td>
+            <td>{{this.Name}}</td>
+            <td>{{this.Description}}</td>
+            <td>{{this.CreatedDate}}</td>
+            <td>{{this.Status}}</td>
+        </tr>
+        {{/each}}
+    </script>
+
+    <!-- Handlebars Library -->
+    <script src="https://cdn.jsdelivr.net/npm/handlebars/dist/handlebars.min.js"></script>
+
+    <!-- External JavaScript -->
     <script src="script.js"></script>
 </body>
 </html>

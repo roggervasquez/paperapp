@@ -11,21 +11,21 @@ papers = [
         "Id": 1,
         "Name": "Exploring the Quantum World",
         "Description": "A comprehensive review of quantum mechanics and its applications.",
-        "Created Date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "CreatedDate": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "Status": "Published"
     },
     {
         "Id": 2,
         "Name": "Advances in Artificial Intelligence",
         "Description": "An analysis of recent developments in AI technologies and their impact on various industries.",
-        "Created Date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "CreatedDate": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "Status": "Under Review"
     },
     {
         "Id": 3,
         "Name": "Climate Change and Future Predictions",
         "Description": "Examining the effects of climate change and modeling future environmental changes.",
-        "Created Date": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+        "CreatedDate": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
         "Status": "Rejected"
     }
 ]
